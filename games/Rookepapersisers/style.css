@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Datatype:wght@100..900&display=swap');
+
+body{
+   font-family: "Datatype", monospace;
+   background-image: linear-gradient(rgb(255, 19, 19), rgb(5, 209, 255), rgb(226, 255, 8), rgb(255, 179, 0));
+   /*choose text color */
+    /*choose display type (i recommend flex) */
+    /*center align everything */
+    min-height: 100vh;
+    margin: 0;
+}
+
+.game-container{
+     
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 650px;
+    border: 3px solid #4a6a8a;
+   /* transition here (we will talk about it later) */
+}
+
+/*style all h1 elements (maybe change their color, make them bolder, etc) */
+
+.score {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.score span {
+    font-size: 2em;
+    display: inline-block; 
+     /*choose background color */
+}
+
+.shake {
+    animation: shake-hand 0.4s 4 alternate;
+}
+
+
+@keyframes shake-hand {
+    from {
+        transform: rotate(15deg);
+    }
+    to {
+        transform: rotate(-15deg);
+    }
+}
+
+
+.result p {
+    font-size: 1.8em;
+    font-weight: 600;
+    height: 40px;
+    color: #f1c40f;
+}
+
+.options button{
+    background: #e67e22;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    margin: 0 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+     /* transition here (we will talk about it later) */
+    border-bottom: 4px solid #d35400;
+}
+
+.match {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.hand img {
+    width: 120px;
+    height: 120px;
+}
+
+#computer-hand img {
+    transform: scaleX(-1); /* Flips the computer's hand */
+}
+
+.options button:hover {
+    background-color: #00ff00;
+    transform: translateY(-2px);
+}
+.options button:active{ 
+    transform: translateY(2px);
+}
+
+
+.options button:disabled{
+    background-image: linear-gradient(rgb(255, 19, 19), rgb(5, 209, 255), rgb(2, 244, 54));
+
+}
+
+.player-wins-tranform{
+    transform: scale(1.03) rotate(1deg);
+    box-shadow: 0 0 40px green, 0 0 20px rgb(20, 70, 20);
+
+}
+
+.score-updated {
+    transform: scale(1.6) rotate(10deg);
+    color: green;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:color rgb(9, 9, 219);
+    text-align: center;
+    justify-content: center;
+}
+
+.flexbox-container > div {
+    background-color: rgb(29, 244, 29);
+    border: 20px #f60505;
+    padding:20px;
+    max-width: 230;
+}
+
