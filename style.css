@@ -10,14 +10,36 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    height: 100vh;
+    height: 10vh;
 }
 .navbar a {
     padding: 100 ;
-    width: 100px;
-    height: 50px;
+    width: 120px;
+    height: 60px;
     border: 2px solid rgb(0, 0, 0);
     color: rgb(10, 187, 203);
     text-decoration: dotted;
     background-color: rgb(3, 38, 144);
 }   
+
+.images {
+    display: flex;
+    border: 2px solid rgb(0, 0, 0);
+        align-items: center;
+        justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
