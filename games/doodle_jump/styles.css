@@ -174,3 +174,11 @@ right: 12px;
     50% {transform: scale(.95) rotate(2deg); opacity: .7;}
     100% {transform: scale(.9) rotate(-2deg); opacity: 0;}
 }
+#zombo {
+    position: absolute;
+    top: 65%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+}

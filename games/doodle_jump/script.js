@@ -29,6 +29,7 @@ const gameOverElement = document.getElementById('gameOver');
 const finalScoreElement = document.getElementById('finalScore');
 const startScreenElement = document.getElementById('startscreen');
 const gameContainer = document.getElementById('gameContainer');
+const jumpscare = document.getElementById('zombo');
 
 const jumpSound = new Audio("../../sound/jumpEffect.mp3");
 
@@ -142,6 +143,14 @@ function checkCollisions() {
             }
 
             jumpSound.play();
+
+
+            if(score > 999 && score < 1020) {
+                jumpscare.style.display = "block";
+                setTimeout(() => {
+                    jumpscare.style.width = 0;
+                }, 100);
+            }
 
         }
         
