@@ -2,28 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <script src="./script.js" defer></script>
     <title>Document</title>
-    <link href="style.css" rel="stylesheet">
-    
 </head>
 <body>
-    <div class="navbar">
-        <a href="index.html">home</a>
-        <a href="imagesite.html">image site</a>
-        <a href="mydigitalclock.html">clock</a>
-        <a href="clockindex.html">clock physical</a>
-        <a href="final.html">final</a>
-        <a href="gallery.html">gallery</a>
-        <a href="animation.html">animation</a>
-        <a href="./games/Rookepapersisers/index.html">Rock Paper Scissors</a>
-        <a href="./games/doodle_jump/index.html">doodle_jump</a>
-        <a href="./games/flappy_bird/index.html">flappy_bird</a>
-        <a href="number_guesser.html">numbergusser</a>
+    
+
+    <div id="gameContainer">    
+        <div id="bird"></div>
     </div>
-    <div class ="images">
-        <img src="alamaCollage.png" width="1500vh"> 
-        <img src="">
+
+    <div id="gameOver">
+            <h1>Game Over!</h1>
+            <p>Your Score: <span id="finalScore">0</span> </p>
+            <button onclick="startGame()">Redeem Yourself! </button>
+        </div>
+    <div id = "startscreen">
+        <h1>Welcome to this game </h1>
+        <p> controls are spase</p>
+        <button onclick="startGame()">Start!</button>
     </div>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
